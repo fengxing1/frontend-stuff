@@ -15,4 +15,32 @@
 6. PhotoShop下载与安装
 7. Sketch下载与安装
 
+## 调试环境配置
 
+为了能够完整地调试所有功能，需要配置一个自定义域名，示例中将该域名定为 `mhc.com`。
+
+### Web 服务
+
+将 `***.properties` 文件中的 `***.domain` 的值改为 `mhc.com`。
+
+### Nginx
+
+1. 终端输入 `brew install nginx`
+2. Finder 界面 <kbd>shift</kbd> + <kbd>cmd</kbd> + <kbd>G</kbd> 打开 `/usr/local/etc/nginx`
+3. 编辑 `nginx.conf`
+4. 修改如下配置
+    ```
+    server {
+      listen 80;
+      server_name localhost;
+
+      location / {
+        proxy_pass http://127.0.0.1:8080;
+      }
+    }
+    ```
+
+### hosts 文件
+
+1. 终端输入 `sudo vi /etc/hosts`
+2. 将域名映射到本地 IP，如 `127.0.0.1    mhc.com`
