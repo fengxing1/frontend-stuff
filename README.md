@@ -1,3 +1,3 @@
 # 买好车前端团队
 
-[开发文档](doc.md)
+[代码风格指导](docs/code-style.md)
