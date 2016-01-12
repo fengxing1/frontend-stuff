@@ -1,5 +1,99 @@
 # 代码风格指导
 
+统一的代码风格可以提高团队的协作效率，能够让新人迅速读懂代码。
+
+## 通则
+
+* 严格遵守「结构、表现、行为相分离」
+  * 统计代码的情况除外
+* 遵守 DRY 原则
+* 每行行首要比上一行多一个缩进（每个缩进是两个空格）
+* 每行行末不要有多余的空白符
+* 一般情况，所有字符拼写都用小写
+* 模块化开发
+* 命名要用英文单词且具备语义
+
+## HTML
+
+HTML 代码采用 HTML5 标准。
+
+* 文档类型为 `<!DOCTYPE html>`
+* 单行标签末尾不要有反斜杠，如：`<link rel="stylesheet">`
+* `<img>` 标签要有 `alt` 属性，以在图片没显示出的时候知道是什么
+* `<input>` 标签要指明 `type` 属性的值，即使值为 `text`
+* `<input>` 和 `<textarea>` 要指定 `placeholder`
+* 用 `tabindex` 属性设置表单元素填写顺序
+* 用 `autofocus` 指定默认获取焦点的文本框
+* `<button>` 标签要指明 `type` 属性的值
+
+```html
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>代码风格指导</title>
+    <link rel="stylesheet" href="code-style-demo.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="img/logo.png" alt="网站 LOGO">
+        <h1>代码风格指导</h1>
+      </header>
+      <form action="/login" method="post">
+        <input type="text" value="" placeholder="请输入用户名" tabindex="1" autofocus="autofocus">
+        <input type="password" value="" placeholder="请输入密码" tabindex="2">
+        <button type="submit" tabindex="3">登录</button>
+      </form>
+    </main>
+    <script src="code-style-demo.js"></script>
+  </body>
+</html>
+```
+
+## CSS
+
+* 每条声明后面要用 `;` 结尾
+
+更多请参照 [Principles of writing consistent, idiomatic CSS](https://github.com/necolas/idiomatic-css)
+
+## JavaScript
+
+* 每个文件都封闭成立即执行的匿名函数 `(function() {})();` 以保证不会变量污染
+* 每条语句后面要用 `;` 结尾
+* 每个函数尽可能地简短，每个函数都是一个小模块，完成一个小功能
+
+```js
+// code-style-demo.js 文件
+(function() {
+
+function isFormValid( $form ) {
+  if ( $("[type='text']", $form).val() === "" ) {
+    return "用户名不能为空！";
+  }
+
+  if ( $("[type="password"]", $form).val() === "" ) {
+    return "密码不能为空！";
+  }
+
+  return true;
+}
+
+$("form").on("submit", function() {
+  var validateResult = isFormValid($(this));
+
+  if ( validateResult !== true ) {
+    alert(validateResult);
+
+    return false;
+  }
+});
+
+})();
+```
+
+更多请参照 [Principles of Writing Consistent, Idiomatic JavaScript](https://github.com/rwaldron/idiomatic.js)
+
 ## className 命名规则
 
 所谓的「className」，既是 HTML 的 `class` 属性，又是 CSS 中的 `class`，它的命名方式在前端开发中具有很重要的作用，影响着项目的质量。我们的项目中采用基于 [SUIT](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md) 的方式对其命名：
