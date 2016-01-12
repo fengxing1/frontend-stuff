@@ -12,7 +12,7 @@
 * ComponentName-descendentName--modifierName
 * ComponentName.is-stateOfComponent
 
-其中 `js-actionName` 是扩充进去的，代表 DOM 元素的事件绑定触发器。
+其中 `js-actionName` 是扩充进去的，代表 DOM 元素的事件绑定触发器。（参考 Nicolas Gallagher 的《[About HTML semantics and front-end architecture](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/#javascript-specific-classes)》）
 
 ```html
 <button type="button" class="js-openDialog">打开对话框</button>
