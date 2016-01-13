@@ -63,6 +63,7 @@ HTML 代码采用 HTML5 标准。
 ## JavaScript
 
 * 每个文件都封闭成立即执行的匿名函数 `(function() {})();` 以保证不会变量污染
+  * 如果使用的构建工具中具备包装文件（wrapper）的功能，在编写源码时不必遵守
 * 每条语句后面要用 `;` 结尾
 * 每个函数尽可能地简短，每个函数都是一个小模块，完成一个小功能
 
@@ -115,7 +116,7 @@ $("form").on("submit", function() {
 <button type="button" class="js-openDialog">打开对话框</button>
 
 <!-- 对话框 -->
-<div class="Dialog is-shown">
+<div class="Dialog">
   <div class="Dialog-header">
     <h3>对话框标题</h3>
     <button type="button" class="Dialog-button Dialog-button--close js-closeDialog">关闭</button>
@@ -150,7 +151,13 @@ $("form").on("submit", function() {
 /**
  * Dialog
  */
-.Dialog {}
+.Dialog {
+  display: none;
+
+  &.is-shown {
+    display: block;
+  }
+}
 
 .Dialog-header {
   // 对话框标题
