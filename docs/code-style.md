@@ -6,7 +6,7 @@
 
 * 严格遵守「结构、表现、行为相分离」
   * 统计代码的情况除外
-* 遵守 DRY(Don't Repeat Yourself) 原则
+* 遵守「[DRY 原则](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)」
 * 每行行首要比上一行多一个缩进（每个缩进是两个空格）
 * 每行行末不要有多余的空白符
 * 一般情况，所有字符拼写都用小写
