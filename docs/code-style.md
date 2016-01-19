@@ -16,6 +16,8 @@
 * 尽量少写多余的无用的垃圾代码
 * 不需要的代码要删掉，不要注释掉
 
+与代码格式有关的配置可以使用 [EditorConfig](http://editorconfig.org) 进行设置。
+
 ## HTML
 
 HTML 代码采用 HTML5 标准。
