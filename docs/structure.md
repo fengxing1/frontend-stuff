@@ -10,10 +10,10 @@
 
 ```
 .
-├─┬─ bower_components
+├─┬─ bower_components             // 工具 Bower 自动生成的
 │ ├─── jquery-1.12.0
 │ └─── normalize.css-3.0.3
-├─┬─ components
+├─┬─ components                   // 组件化代码
 │ ├─┬─ header
 │ │ ├─── header.js
 │ │ ├─── header.scss
@@ -22,9 +22,9 @@
 │ └─┬─ footer
 │   ├─── footer.scss
 │   └─── footer.vm
-├─┬─ layouts
+├─┬─ layouts                      // 页面布局，不允许有静态资源文件
 │ └─── default.vm
-└─┬─ views
+└─┬─ views                        // 非组件化代码
   └─┬─ account
     ├─── avatar.jpg
     ├─── detail.js
@@ -38,19 +38,19 @@
 ```
 .
 └─┬─ assets
-  ├─┬─ lib
+  ├─┬─ lib                        // 第三方库，对应开发环境的 bower_components 目录
   │ ├─── jquery-1.12.0
   │ └─── normalize.css-3.0.3
-  └─┬─ mini
-    └─┬─ 1.1
-      ├─┬─ c
+  └─┬─ mini                       // 项目代码，mini 是项目名
+    └─┬─ 1.1                      // 项目版本
+      ├─┬─ c                      // 项目组件化代码，对应开发环境的 components 目录
       │ ├─┬─ header
       │ │ ├─── header.js
       │ │ ├─── header.css
       │ │ └─── logo.png
       │ └─┬─ footer
       │   └─── footer.css
-      └─┬─ p
+      └─┬─ p                      // 项目非组件化代码，对应开发环境的 views 目录
         └─┬─ account
           ├─── avatar.jpg
           ├─── detail.js
