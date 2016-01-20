@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <title>买好车-B2B系统</title>
+    <link rel="stylesheet" href="//img.mhc.com/lib/normalize.css-3.0.3/normalize.css">
+    <link rel="stylesheet" href="//img.mhc.com/lib/fontawesome-4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//img.mhc.com/mini/1.1/c/reset/reset-cfc7940.css">
+    <link rel="stylesheet" href="//img.mhc.com/mini/1.1/c/layout/layout-ff39dcc.css">
+    <script src="//img.mhc.com/lib/jquery-1.12.0/dist/jquery.min.js"></script>
+  </head>
+  <body class="Page">
+    #parse("/template/components/ucHeader/ucHeader.vm")
+    $screen_content
+  </body>
+</html>

@@ -18,7 +18,7 @@ fis.set("proj_name", "mini");
 fis.set("proj_ver", "1.1");
 
 // 开发环境
-// fis3 release dev -w
+// fis3 release -w
 fis
   .media("dev")
   .match("_*.*", {
@@ -76,6 +76,50 @@ fis
   })
   .match("/template/views/(**.{css,js,png,jpg,gif})", {
     release: "/assets/${proj_name}/${proj_ver}/p/$1"
+  })
+  .match("/template/views/**", {
+    useSameNameRequire: true
+  });
+
+// 线上环境
+// fis3 release prod
+fis
+  .media("prod")
+  .match("*.scss", {
+    release: false
+  }, true)
+  .match("*.{css,js,jpg,png,gif}", {
+    useHash: true
+  })
+  .match("*.css", {
+    optimizer: fis.plugin("clean-css")
+  })
+  .match("*.js", {
+    optimizer: fis.plugin("uglify-js"),
+    postprocessor: fis.plugin("jswrapper")
+  })
+  .match("*.png", {
+    optimizer: fis.plugin("png-compressor")
+  })
+  .match("**", {
+    release: "$0",
+    domain: "//img.mhc.com",
+    deploy: fis.plugin("local-deliver", {
+      to: "../webapp_prod"
+    })
+  })
+  .match("/bower_components/(**)", {
+    useHash: false,
+    release: "/lib/$1"
+  })
+  .match("/template/{components,views}/**.js", {
+    isMod: true
+  })
+  .match("/template/components/(**.{css,js,png,jpg,gif})", {
+    release: "/${proj_name}/${proj_ver}/c/$1"
+  })
+  .match("/template/views/(**.{css,js,png,jpg,gif})", {
+    release: "/${proj_name}/${proj_ver}/p/$1"
   })
   .match("/template/views/**", {
     useSameNameRequire: true

@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="//img.mhc.com/mini/1.1/c/table/table-da8604d.css">
+<link rel="stylesheet" href="//img.mhc.com/mini/1.1/p/setting/account-fbeb025.css">
+<main class="Page-content">
+    <header>
+        <h2>修改帐号信息</h2>
+    </header>
+    <table class="Table Table--captioned AccountInfo">
+        <caption>我的信息</caption>
+        <colgroup>
+            <col style="width: 172px;">
+            <col style="">
+        </colgroup>
+        <tbody>
+        <tr>
+            <th>注册手机号</th>
+            <td>13888888888</td>
+        </tr>
+        <tr>
+            <th>真实姓名</th>
+            <td>打爸爸 333333333333333333</td>
+        </tr>
+        <tr>
+            <th>注册时间</th>
+            <td><time>2015年05月13日</time></td>
+        </tr>
+        <tr>
+            <th>所属公司</th>
+            <td>天上天下</td>
+        </tr>
+        <tr>
+            <th>详细地址</th>
+            <td>唯我独尊</td>
+        </tr>
+        <tr>
+            <th>手　　机</th>
+            <td class="EditableArea">
+                <div class="EditableArea-row EditableArea-row--display"><span>13888888888</span><button class="AccountInfo-link js-editPhone" type="button">编辑</button></div>
+                <form class="EditableArea-row EditableArea-row--edit js-submitPhone">
+                    <input type="text" value=""><button type="submit">确定</button><button type="button" class="js-cancelEditing">取消</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <th>登录密码</th>
+            <td>******<a href="#" class="AccountInfo-link">重置密码</a></td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+<script src="//img.mhc.com/mini/1.1/p/setting/account-683fd9f.js"></script>
