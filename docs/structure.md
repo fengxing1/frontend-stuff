@@ -44,7 +44,7 @@ bower install
 
 根据项目所选用的 web 框架，`components`、`layouts`、`views` 这三个目录也许会被嵌进其他目录当中，但**它们应当是同级的**。
 
-样例请参照 [mini/webapp](../examples/mini/webapp)（执行 `fis3 release -w` 可监听目录生成 `.css` 等文件）。
+样例请参照 [`mini/webapp`](../examples/mini/webapp)（执行 `fis3 release -w` 可监听目录生成 `.css` 等文件）。
 
 ## 测试环境
 
@@ -72,7 +72,7 @@ bower install
           └─── new.vm
 ```
 
-样例请参照 [mini/webapp_qa](../examples/mini/webapp_qa)（该目录是在 [mini/webapp](../examples/mini/webapp) 目录下执行 `fis3 release qa` 所生成）。
+样例请参照 [`mini/webapp_qa`](../examples/mini/webapp_qa)（该目录是在 [`mini/webapp`](../examples/mini/webapp) 目录下执行 `fis3 release qa` 所生成）。
 
 ## 线上环境
 
@@ -101,4 +101,4 @@ bower install
         └─── new.vm
 ```
 
-样例请参照 [mini/webapp_prod](../examples/mini/webapp_prod)（该目录是在 [mini/webapp](../examples/mini/webapp) 目录下执行 `fis3 release prod` 所生成）。
+样例请参照 [`mini/webapp_prod`](../examples/mini/webapp_prod)（该目录是在 [`mini/webapp`](../examples/mini/webapp) 目录下执行 `fis3 release prod` 所生成）。
