@@ -1,0 +1,14 @@
+{
+  "name": "mini-assets",
+  "description": "Assets for project Mini",
+  "version": "1.0.1",
+  "devDependencies": {
+    "compass-mixins-0.12.7": "compass-mixins#0.12.7"
+  },
+  "dependencies": {
+    "normalize.css-3.0.3": "normalize.css#3.0.3",
+    "jquery-1.12.0": "jquery#1.12.0",
+    "layer-1.9.3": "layer#*",
+    "fontawesome-4.5.0": "fontawesome#4.5.0"
+  }
+}

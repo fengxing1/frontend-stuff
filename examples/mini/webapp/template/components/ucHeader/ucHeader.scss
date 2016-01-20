@@ -1,0 +1,107 @@
+@import "../../../bower_components/compass-mixins-0.12.7/lib/compass/css3";
+
+$ucHeaderBg: #323232;
+$ucNavColor: #bcbcbc;
+$colorWhite: #fff;
+$ucNavHoverColor: $colorWhite;
+$ucNavCurrentColor: $colorWhite;
+$ucNavHeight: 60px;
+$ucNavFontSize: 12px;
+$ucSubNavBg: #4A4A4A;
+$ucBtnBg: #FF6602;
+$ucLogOutColor: #FF5D06;
+
+@mixin ucLogoSize{
+  width: 135px;
+  height: 20px;
+}
+
+// 商家后台，头部
+.UcHeader{
+  background: $ucHeaderBg;
+  height: $ucNavHeight;
+  font-size: $ucNavFontSize;
+}
+.UcHeader-logo{
+  @include ucLogoSize;
+  display: block;
+  float: left;
+  padding: 20px 0 20px 12px;
+
+  & img{
+    @include ucLogoSize;
+  }
+}
+.UcHeader-nav{
+  float: left;
+  line-height: $ucNavHeight;
+  margin: 0;
+  padding: 0 0 0 30px;
+}
+.UcHeader-nav .N{
+  list-style: none;
+  float: left;
+  margin: 0 10px;
+  position: relative;
+  z-index: 1;
+
+  & a{
+    color: $ucNavColor;
+    text-decoration: none;
+    padding: 0 5px;
+
+    &:hover{
+      color: $ucNavHoverColor;
+    }
+  }
+
+  &.is-current a,
+  &.is-current a:hover{
+    color: $ucNavCurrentColor;
+  }
+}
+.UcHeader-subNav{
+  @include border-bottom-right-radius(3px);
+  @include border-bottom-left-radius(3px);
+
+  display: none;
+  position: absolute;
+  left: -16px;
+  top: $ucNavHeight;
+  padding: 0;
+  white-space: nowrap;
+  background: $ucSubNavBg;
+  width: 70px;
+  line-height: 30px;
+  text-align: center;
+}
+.UcHeader-subNav .subN{
+  list-style: none;
+}
+
+.UcHeader-user{
+  float: right;
+
+  & .UcHeader-avatar{
+    @include border-radius(18px);
+    width: 35px;
+    height: 35px;
+    margin: 12px 10px 0 0;
+    float: left;
+  }
+
+  & .UcHeader-nick{
+    float: left;
+    line-height: $ucNavHeight;
+    color: $colorWhite;
+    margin: 0 10px 0 0;
+  }
+
+  & .UcHeader-logout{
+    color: $ucLogOutColor;
+    line-height: $ucNavHeight - 1;
+    font-size: 14px;
+    padding: 10px 10px 10px 5px;
+    margin: 0 10px 0 0;
+  }
+}

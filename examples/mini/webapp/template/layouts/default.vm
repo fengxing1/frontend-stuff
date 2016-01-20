@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <title>买好车-B2B系统</title>
+    <link rel="stylesheet" href="/bower_components/normalize.css-3.0.3/normalize.css">
+    <link rel="stylesheet" href="/bower_components/fontawesome-4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/template/components/reset/reset.css">
+    <link rel="stylesheet" href="/template/components/layout/layout.css">
+    <script src="/bower_components/jquery-1.12.0/dist/jquery.min.js"></script>
+  </head>
+  <body class="Page">
+    #parse("/template/components/ucHeader/ucHeader.vm")
+    $screen_content
+  </body>
+</html>

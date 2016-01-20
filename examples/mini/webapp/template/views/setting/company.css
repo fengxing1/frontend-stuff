@@ -1,0 +1,56 @@
+/**
+ * @require "template/components/table/table.scss"
+ */
+.Table--captioned .AccountInfo-separator td {
+  height: 40px;
+  padding: 0;
+}
+
+.Table--captioned .AccountInfo-separator td > div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  padding-right: 15px;
+  padding-left: 19px;
+  line-height: 40px;
+  background-color: #FAFBFC;
+}
+
+.Table--captioned tr + .AccountInfo-separator td {
+  padding-top: 6px;
+}
+
+.Table--captioned tr + .AccountInfo-separator td > div {
+  height: 41px;
+  border-top: 1px solid #D8D8D8;
+}
+
+.Table--captioned .AccountInfo-btnGroup,
+.Table--captioned .AccountInfo-checkResult {
+  float: right;
+  margin-top: 6px;
+  line-height: 28px;
+}
+
+.Table--captioned .AccountInfo-btnGroup button {
+  width: 70px;
+  height: 28px;
+  line-height: inherit;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.Table--captioned .AccountInfo-btnGroup button:first-child {
+  background-color: #FF5D06;
+}
+
+.Table--captioned .AccountInfo-btnGroup button + button {
+  margin-left: 10px;
+  background-color: #BEBEBE;
+}
+
+.Table--captioned .AccountInfo-checkResult {
+  color: #FF6602;
+}

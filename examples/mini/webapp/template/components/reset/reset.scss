@@ -1,0 +1,21 @@
+/**
+ * @require "../../bower_components/normalize.css-3.0.3/normalize.css"
+ * @require "../../bower_components/fontawesome-4.5.0/css/font-awesome.min.css"
+ */
+
+@import "../helper";
+
+body {
+  font: 300 14px/1.5 "Pingfang SC", "Microsoft Yahei", Sans-serif;
+  color: #4A4A4A;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+button {
+  padding: 0;
+  border-style: none;
+}

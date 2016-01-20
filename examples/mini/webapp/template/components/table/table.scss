@@ -1,0 +1,58 @@
+/**
+ * @require "../layout/layout.scss"
+ */
+
+@import "../helper";
+
+.Table {}
+
+.Table--captioned {
+  caption,
+  tbody th,
+  tbody td {
+    border: 1px solid #D8D8D8;
+  }
+
+  caption {
+    $c_h: 40px;
+
+    padding-left: 19px;
+    height: $c_h;
+    line-height: $c_h;
+    font-weight: 400;
+    color: #FF6602;
+    text-align: left;
+    background-color: #F0F1F5;
+    border-bottom: 1px solid #FF6602;
+  }
+
+  th {
+    font-weight: inherit;
+  }
+
+  tbody {
+    th,
+    td {
+      @include box-sizing(border-box);
+
+      height: 50px;
+      padding: 15px 16px;
+      border-top-width: 0;
+    }
+
+    th {
+      border-right-width: 0;
+      background-color: #FAFBFC;
+
+      + td {
+        border-left-width: 0;
+      }
+    }
+  }
+
+  + .Table--captioned {
+    caption {
+      border-top-width: 0;
+    }
+  }
+}
