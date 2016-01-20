@@ -4,6 +4,15 @@
 
 在测试和线上环境中，除了 `lib` 目录的静态资源文件都需要加 MD5 文件戳。
 
+下面所示各种环境都有相对应的样例（[`mini`](../examples/mini)）。其中 [`mini/webapp`](../examples/mini/webapp) 为原始目录，[`mini/webapp_qa`](../examples/mini/webapp_qa) 和 [`mini/webapp_prod`](../examples/mini/webapp_prod) 是生成的。执行 FIS 命令之前，需要先安装所依赖的包和组件。在原始目录下执行如下命令：
+
+```
+npm install
+bower install
+```
+
+**测试和线上环境的静态资源文件结构只是给个概念，实际项目中会直接上传到对应的服务器上，而不会在本地生成。**
+
 ## 开发环境
 
 因为采用「就近维护」原则，静态资源文件与后端模板文件关联性较高。
@@ -33,6 +42,10 @@
     └─── new.vm
 ```
 
+根据项目所选用的 web 框架，`components`、`layouts`、`views` 这三个目录也许会被嵌进其他目录当中，但**它们应当是同级的**。
+
+样例请参照 [mini/webapp](../examples/mini/webapp)（执行 `fis3 release -w` 可监听目录生成 `.css` 等文件）。
+
 ## 测试环境
 
 ```
@@ -58,6 +71,8 @@
           ├─── new.scss
           └─── new.vm
 ```
+
+样例请参照 [mini/webapp_qa](../examples/mini/webapp_qa)（该目录是在 [mini/webapp](../examples/mini/webapp) 目录下执行 `fis3 release qa` 所生成）。
 
 ## 线上环境
 
@@ -85,3 +100,5 @@
         ├─── new.scss
         └─── new.vm
 ```
+
+样例请参照 [mini/webapp_prod](../examples/mini/webapp_prod)（该目录是在 [mini/webapp](../examples/mini/webapp) 目录下执行 `fis3 release prod` 所生成）。
