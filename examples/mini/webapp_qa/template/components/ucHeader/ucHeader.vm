@@ -1,0 +1,21 @@
+<link rel="stylesheet" type="text/css" href="//hmc.com/assets/mini/1.1/c/ucHeader/ucHeader-347822d.css">
+<div class="UcHeader">
+  <a class="UcHeader-logo" href="/"><img alt="卖好车商家后台" src="//hmc.com/assets/mini/1.1/c/ucHeader/uc_logo-8cf287d.png"></a>
+  <ol class="UcHeader-nav js-UcHeader-nav">
+    <li class="N"><a href="#">首页</a></li>
+    <li class="N">
+      <a href="#">设置</a>
+      <ul class="UcHeader-subNav">
+        <li class="subN"><a href="#">公司信息</a></li>
+        <li class="subN"><a href="#">账号信息</a></li>
+      </ul>
+    </li>
+  </ol>
+
+  <div class="UcHeader-user">
+    <img class="UcHeader-avatar" src="https://img.maihaoche.com/6FBCA998-9B41-4660-B813-2CA0EEED3DFB.jpg" alt="用户头像">
+    <span class="UcHeader-nick">黄果果</span>
+    <a class="UcHeader-logout" href="#"><i class="fa fa-power-off"></i></a>
+  </div>
+</div>
+<script src="//hmc.com/assets/mini/1.1/c/ucHeader/ucHeader-0bbf064.js"></script>

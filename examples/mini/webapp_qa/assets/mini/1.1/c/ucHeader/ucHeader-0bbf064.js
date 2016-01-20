@@ -1,0 +1,1 @@
+!function(e){e(document).ready(function(){e(".js-UcHeader-nav .N").on("mouseenter",function(){var n=e(this);e(".UcHeader-subNav").hide(),n.find(".UcHeader-subNav").slideDown("fast")}),e(".js-UcHeader-nav .N").on("mouseleave",function(){var n=e(this);n.find(".UcHeader-subNav").slideUp("fast")})})}(jQuery);

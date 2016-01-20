@@ -1,0 +1,1 @@
+!function(){try{$(document).ready(function(){$(".js-checkAccount").on("click",function(){return alert("通过"),!1}),$(".js-deleteAccount").on("click",function(){return confirm("确定要删除此账号？"),!1})})}catch(c){}}();

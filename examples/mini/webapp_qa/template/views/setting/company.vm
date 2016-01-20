@@ -1,0 +1,92 @@
+<link rel="stylesheet" href="//hmc.com/assets/mini/1.1/c/table/table-da8604d.css">
+<link rel="stylesheet" href="//hmc.com/assets/mini/1.1/p/setting/company-e565842.css">
+<main class="Page-content">
+  <header>
+    <h2>修改公司信息</h2>
+  </header>
+  <table class="Table Table--captioned">
+    <caption>基本信息</caption>
+    <colgroup>
+      <col style="width: 172px;">
+      <col style="">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th>公司名称</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>城　　市</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>详细地址</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>联 系 人</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>联系电话</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>传　　真</th>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="Table Table--captioned AccountInfo">
+    <caption>账号信息</caption>
+    <colgroup>
+      <col style="width: 172px;">
+      <col style="">
+    </colgroup>
+    <tbody>
+      <tr class="AccountInfo-separator">
+        <td colspan="2">
+          <div>账号1：<span class="AccountInfo-checkResult">已通过</span></div>
+        </td>
+      </tr>
+      <tr>
+        <th>账户类型</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>收 款 人</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>开 户 行</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>银行账号</th>
+        <td></td>
+      </tr>
+      <tr class="AccountInfo-separator">
+        <td colspan="2">
+          <div>账号1：<div class="AccountInfo-btnGroup"><button type="button" class="js-checkAccount">通过</button><button type="button" class="js-deleteAccount">删除</button></div></div>
+        </td>
+      </tr>
+      <tr>
+        <th>账户类型</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>收 款 人</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>开 户 行</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>银行账号</th>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+<script src="//hmc.com/assets/mini/1.1/p/setting/company-850f9b0.js"></script>
