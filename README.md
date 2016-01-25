@@ -4,4 +4,4 @@
 
 关于买好车前端团队，也许，您想看以下内容：
 
-* [团队规范](https://github.com/maihaoche/frontend-stuff/wiki)
+* [团队规范与约定](https://github.com/maihaoche/frontend-stuff/wiki)
