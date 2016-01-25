@@ -1,11 +1,7 @@
 # 买好车前端团队
 
-## 基本守则
+欢迎～欢迎～热烈欢迎！
 
-* [代码风格](docs/code-style.md)
-* [文件结构](docs/structure.md)
-* [技术栈](docs/tech-stack.md)
+关于买好车前端团队，也许，您想看以下内容：
 
-## B2B 项目
-
-* [通用样式](docs/b2b/class-name.md)
+* [团队规范](https://github.com/maihaoche/frontend-stuff/wiki)
