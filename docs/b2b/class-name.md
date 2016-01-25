@@ -25,3 +25,22 @@
 <!-- 失效的仿按钮链接 -->
 <a href="#" class="Button Button--primary is-disabled">仿按钮链接</a>
 ```
+
+## 第三方插件覆盖
+
+### Select2
+
+```html
+<select>
+  <option value="">选择城市</option>
+  <option value="hangzhou">杭州</option>
+  <option value="quzhou">衢州</option>
+</select>
+```
+
+```js
+$("select").select2({
+  containerCssClass: "mhc-Select2-container",
+  dropdownCssClass: "mhc-Select2-dropdown"
+});
+```
