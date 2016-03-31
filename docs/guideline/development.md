@@ -3,9 +3,10 @@
 ## 目录
 
 * 环境搭建
-  * [Compass](#Compass)
-  * [Node.js](#Node.js)
+  * [Compass](#compass)
+  * [Node.js](#nodejs)
 * [启动应用](#启动应用)
+* [安装依赖](#安装依赖)
 
 ## Compass
 
@@ -86,7 +87,7 @@ sudo gem install compass
 
 基本每个项目的启动都是要执行一个脚本文件，假设项目目录是 `/Users/USER/work/PROJ`。
 
-如果项目根目录中有个 `build.sh` 文件，不要直接修改它，而是拷贝一份再修改里面的路径。
+如果是第一次启动并且项目根目录中有个 `build.sh` 文件，不要直接修改它，而是拷贝一份再修改里面的路径。
 
 ```sh
 # 拷贝执行脚本
@@ -95,13 +96,23 @@ cp ~/work/PROJ/build.sh ~/work/PROJ/build_USER.sh
 vim ~/work/mini/build_USER.sh
 ```
 
-通过 `sh ~/work/PROJ/build_USER.sh` 启动应用。
+以后就可以通过 `sh ~/work/PROJ/build_USER.sh` 启动应用。
 
 ### 前端源码构建
 
+前端文件的源码构建需要在相关配置文件所在的目录中进行，所以要先 `cd ~/work/PROJ/PROJ-web/src/main/webapp` 切换到那个目录。
+
+第一次构建以及每当 `package.json` 或 `bower.json` 有更新时，需要分别执行 `npm install` 和 `bower install` 下载（更新）依赖包（库）。
+
+最后，用 `fis3 release -w` 以监听模式执行开发环境的构建任务。
+
+## 安装依赖
+
+安装第三方前端库要用 Bower 以 `bower install LIB-VERSION=LIB#VERSION` 的形式，为了避免版本冲突。
+
 ```sh
-# 切换到 fis-conf.js 所在目录
-cd ~/work/PROJ/PROJ-web/src/main/webapp
-# 以监听模式执行开发环境的构建任务
-fis3 release -w
+# 自动将依赖添加到 bower.json 中的 dependencies
+bower install fontawesome-4.5.0=fontawesome#4.5.0 --save
+# 自动将依赖添加到 bower.json 中的 devDependencies
+bower install compass-mixins-0.12.7=compass-mixins#0.12.7 --save-dev
 ```
