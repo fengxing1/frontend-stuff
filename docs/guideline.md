@@ -1,11 +1,5 @@
 # 买好车前端团队工作指导
 
-如果想在本地编辑文档，需通过以下地址拉取、提交文件：
-
-```
-git clone https://github.com/maihaoche/frontend-stuff.wiki.git
-```
-
 ## 目录
 
 * [新人入门](#新人入门)
