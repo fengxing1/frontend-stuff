@@ -4,4 +4,4 @@
 
 关于买好车前端团队，也许，您想看以下内容：
 
-* [工作指导](docs/guideline.md)
+* [工作指导](docs/guideline/)
