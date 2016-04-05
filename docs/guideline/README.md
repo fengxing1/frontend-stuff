@@ -14,8 +14,8 @@
 
 * [安装软件](installation.md)
 * [项目开发](development.md)
-* 调试页面（请参考《[如何调试一个页面](https://ourai.ws/posts/how-to-debug-a-web-page/)》）
 * [编写页面](coding.md)
+* 调试页面（请参考《[如何调试一个页面](https://ourai.ws/posts/how-to-debug-a-web-page/)》）
 
 ## 规范与约定
 
