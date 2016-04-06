@@ -10,13 +10,34 @@
 
 ### 丈量尺寸
 
-选中层后，在 Photoshop 中按下 <kbd>cmd</kbd> + <kbd>T</kbd>，然后 <kbd>F8</kbd>；在 Sketch 中查看右侧的属性面板。
+在 Photoshop 中，在目标图层上按下 <kbd>command</kbd> + <kbd>T</kbd> 选中，然后 <kbd>fn</kbd> + <kbd>F8</kbd> 显示所选图层信息。
+
+![](coding/size-in-photoshop.png)
+
+在 Sketch 中，选中想要查看的对象，右侧的属性面板中有相关信息。
+
+![](coding/size-in-sketch.png)
 
 ### 测量间距
 
-选中层后，在 Photoshop 中按住 <kbd>cmd</kbd> 或在 Sketch 中按住 <kbd>option</kbd>，光标移动到目标层上就会出现相关信息。
+选中层后，在 Photoshop 中按住 <kbd>command</kbd> 或在 Sketch 中按住 <kbd>option</kbd>，光标移动到目标层上就会出现相关信息。
 
 ### 导出图片
+
+在 Photoshop 中有两种导出图片的方式：
+
+* 在图层列表中选中要导出的图层点击右键，选择「快速导出为 PNG」；
+* 用切片工具切好区块后按 <kbd>option</kbd> + <kbd>shift</kbd> + <kbd>command</kbd> + <kbd>S</kbd>。
+
+![](coding/export-in-photoshop.png)
+
+在 Sketch 中导出图片更简单些。选中图片点击右侧面板底部的「Make Exportable」出现导出选项。
+
+![](coding/export-in-sketch-step-1.png)
+
+选择要导出的尺寸，默认只有 1 倍大小的，然后导出图片。
+
+![](coding/export-in-sketch-step-2.png)
 
 ## 页面
 
