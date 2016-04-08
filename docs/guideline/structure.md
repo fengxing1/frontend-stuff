@@ -86,6 +86,10 @@ bower install
 │   └─── footer.vm
 ├─┬─ layouts                      // 页面布局，不允许有静态资源文件
 │ └─── default.vm
+├─┬─ partials                     // HTML 片段，不允许有静态资源文件
+│ ├─── common.vm
+│ ├─── render.vm
+│ └─── statistic.vm
 └─┬─ views                        // 非组件化代码
   └─┬─ account
     ├─── avatar.jpg
