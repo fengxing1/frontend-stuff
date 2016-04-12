@@ -1,6 +1,6 @@
 # 技术栈
 
-这里所描述的是 B2B 项目目前所使用的技术、库和工具，希望今后能够所有项目都采用这一套。
+这里所描述的主要是用于 B2B 项目的技术、库和工具，并且也是今后所有项目的发展方向。
 
 ## 源码
 
@@ -44,13 +44,16 @@
 
 * [Select2](https://select2.github.io) 美化 `<select>` 并增强功能
 * [iCheck](http://icheck.fronteed.com) 美化 `<input type="radio">` 和 `<input type="checkbox">`
+* [Datepicker](https://github.com/fengyuanchen/datepicker) 日期拾取器
 
 ### 其他
 
+* [Beetle](https://github.com/maihaoche/beetle) 移动 web 解决方案
+* [Piston](https://github.com/maihaoche/piston) 数据收集与分析
 * [H5Fx](https://github.com/ourai/H5Fx) 基于 HTML5 规范进行表单验证
 
 ## 工具
 
+* [Bumblebee](https://github.com/maihaoche/node-b3) 将静态资源文件上传到 CDN 和生成活动页面模板
 * [Bower](http://bower.io) 管理第三方前端库
 * [FIS3](http://fis.baidu.com/fis3/) 编译、打包静态资源文件
-* [RocketZ](https://github.com/ourai/rocketz) 将静态资源文件上传到 CDN
