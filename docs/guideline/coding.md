@@ -114,28 +114,9 @@
 
 在编写移动页面时，不使用 `px` 作为单位，取而代之的是 `rem`。然而，设计稿上所测量出来的数值的单位是 `px`，在编码时需要进行转换。
 
-`rem` 的基准，`<html>` 的 `font-size` 是通过 JavaScript 代码根据一定的规则计算出来：
+`rem` 的基准，`<html>` 的 `font-size` 是通过 JavaScript 代码根据一定的规则计算出来。这要依赖于一个移动 web 解决方案——[Beetle](https://github.com/maihaoche/beetle)。正常情况下，项目中已经全局引入了这个库。
 
-```js
-(function (doc, win) {
-  var docEl = doc.documentElement,
-    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-    recalc = function () {
-      var clientWidth = docEl.clientWidth;
-      
-      if (!clientWidth) return;
-      
-      docEl.style.fontSize = (24*clientWidth/750) + 'px';
-    };
-    
-  if (!doc.addEventListener) return;
-  
-  win.addEventListener(resizeEvt, recalc, false);
-  recalc();
-})(document, window);
-```
-
-样式文件的源代码是用 Sass 编写的，已经定义了一个名为 `get_rem` 的 function，只需在调用时传入从设计稿上测量出数值即可：
+样式文件的源代码是用 Sass 编写的，Beetle 中已经定义了一个名为 `get_rem` 的 function，只需在调用时传入从设计稿上测量出数值即可：
 
 ```scss
 p {
@@ -153,3 +134,5 @@ img {
 时不时会有做活动页面的需求，这时的需求方可能是产品，也可能是运营。
 
 活动页面是种较为特殊的页面。如果说开发功能是考验编程和架构能力，那么做活动页面就是考验切图和重构能力。相对来说，这个比较难些，因为**活动页面是要在尽可能短的时间内做出尽可能语义化的页面**。
+
+我们有一个活动页面的发布系统，用于将运营需求与开发分离，同时也是为了把公共部分重用。但在开发调试时还是要在本地进行的，需要把那些已被重用的部分拷到本地文件中。这样一来就增加了很多复制粘贴的重复无意义工作，还好有一个工具能够自动生成那部分——[Bumblebee](https://github.com/maihaoche/node-b3)。具体用法看项目文档吧！
